@@ -1,7 +1,13 @@
 import React from 'react'
+import Banner from './Banner'
+import PhysicallyActive from './preventCancer/PhysicallyActive'
+
 
 export default function Home() {
   return (
-    <div>index</div>
+    <div>
+       <Banner />
+       <PhysicallyActive></PhysicallyActive>
+    </div>
   )
 }
