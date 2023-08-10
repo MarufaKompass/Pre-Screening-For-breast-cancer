@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       padding: {
-        'mainPadding': '50px',
+        'mainPadding': '60px',
       },
     },
   },
@@ -41,21 +41,21 @@ module.exports = {
 
 
 
-  daisyui: {
-    themes: [
-      {
-        mytheme: {
-          primary: "#12a9b2",
-          secondary: "#149999",
-          accent: "#3A4256",
-          neutral: "#647393",
-          "base-100": "#ffffff",
-          info: "#ABE3E6",
-          success: "#3A4256",
-        },
-      },
-    ],
-  },
+  // daisyui: {
+  //   themes: [
+  //     {
+  //       mytheme: {
+  //         primary: "#12a9b2",
+  //         secondary: "#149999",
+  //         accent: "#3A4256",
+  //         neutral: "#647393",
+  //         "base-100": "#ffffff",
+  //         info: "#ABE3E6",
+  //         success: "#3A4256",
+  //       },
+  //     },
+  //   ],
+  // },
 
   daisyui: {
     themes: [

@@ -1,16 +1,19 @@
 import React from "react";
-import avtive from "../../../images/active.png";
+import active from "../../../images/active.png";
 export default function PhysicallyActive() {
   return (
     <div className="py-mainPadding">
       <div className="container_part_two">
-        <div>
-            <h1 className="text-4xl font-bold mb-24 text-center">Ways to Prevent Breast Cancer</h1>
+        <div className="mb-24 text-center">
+            <h1 className="text-4xl font-bold ">Ways to Prevent Breast Cancer</h1>
+            <p className="pt-3">
+            provide you with some general guidelines that are commonly suggested to help reduce the risk of cancer. 
+            </p>
         </div>
-        <div className="grid grid-cols-2">
+        <div className="grid grid-cols-2 gap-10">
           <div>
             <div>
-              <img src={avtive} alt=""  className="w-[600px] h-[400px]"/>
+              <img src={active} alt=""  className="w-[600px] h-[500px]"/>
             </div>
           </div>
           <div>

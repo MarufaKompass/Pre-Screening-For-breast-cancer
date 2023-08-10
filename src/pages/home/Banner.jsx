@@ -2,7 +2,7 @@ import React from "react";
 import bannerImg from "../../images/breast-cancer.png";
 export default function Banner() {
   return (
-        <div className="bg-[#fffcfc]">
+        <div className="bg-[#f7ebef]">
     <div className="py-mainPadding">
       <div className="container">
         <div className="grid grid-cols-2 ">
@@ -21,7 +21,7 @@ export default function Banner() {
                 </p>
                <div className="mt-4 ">
                <a href="http://myhealthrow.com/freact/bcq" target="_blank" alt="" rel="noreferrer"> 
-               <button className="h-[3.2rem] bg-primary w-36 text-[#fff] rounded-md font-semibold text-xl flex justify-center items-center">Survey</button>
+               <button className="h-[3.2rem] bg-[#BCA44E] w-48 text-[#fff] rounded-md font-semibold text-xl flex justify-center items-center">Self Pre Screeing</button>
                </a>
               
                </div>
@@ -31,7 +31,7 @@ export default function Banner() {
            
           </div>
           <div className="flex justify-center flex-1">
-            <img src={bannerImg} alt="img"></img>
+            <img src={bannerImg} alt="img"  className="w-[600px] h-[500px]"></img>
           </div>
         </div>
       </div>
