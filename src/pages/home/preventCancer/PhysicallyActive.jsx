@@ -13,7 +13,7 @@ export default function PhysicallyActive() {
         <div className="grid md:grid-cols-2 grid-cols-1 gap-10 md:px-0  px-8">
           <div>
             <div>
-              <img src={active} alt=""  className="shadow-lg rounded-md"/>
+              <img src={active} alt="" />
             </div>
           </div>
           <div>
