@@ -78,6 +78,7 @@ const NavRoute = styled(Link)`
   color: #757575;
   font-size:.9rem;
   padding: 0.5rem;
+ font-family: 'Poppins', sans-serif;
   &:hover {
     transition: 0.5s ease;
     color: #12a9b2;

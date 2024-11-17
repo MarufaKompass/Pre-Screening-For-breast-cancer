@@ -6,11 +6,12 @@ export default function BirthControl() {
      <div className="py-mainPadding">
       <div className="container_part_two">
         <div className="grid md:grid-cols-2 grid-cols-1 gap-10 md:px-0  px-8">
-          <div>
-            <h1 className="text-4xl font-bold mb-3 md:leading-[3.4rem] leading-[2.7rem]">
+     <div className="flex items-center">
+     <div>
+            <h1 className="text-4xl font-bold mb-3 md:leading-[3.4rem] leading-[2.7rem] font-[poppins] ">
               Avoid Birth Control Pills.
             </h1>
-            <p className="text-base">
+            <p className="font-[poppins] text-[16px] text-[#292929]">
               Birth control pills have both risks and benefits. The younger a
               woman is, the lower the risks are. While women are taking birth
               control pills, they have a slightly increased risk of breast
@@ -19,8 +20,9 @@ export default function BirthControl() {
               on the pill – particularly if a woman smokes.
             </p>
           </div>
+     </div>
           <div>
-            <img src={birthControls} alt=""  className="shadow-lg rounded-md" />
+            <img src={birthControls} alt="" />
           </div>
         </div>
       </div>

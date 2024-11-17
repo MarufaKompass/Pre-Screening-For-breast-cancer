@@ -45,4 +45,5 @@ const SubRoute = styled(Link)`
   color:#000;
   padding: 0.5rem;
   font-size: 1rem;
+   font-family: 'Poppins', sans-serif;
 `;

@@ -1,15 +1,15 @@
 import React from "react";
-import about from "../../images/screening.jpg";
+import screening from "../../images/screening.png";
 export default function Screening() {
   return (
     <div className="bg-[#fafafa]">
       <div className="py-mainPadding">
         <div className="container">
           <div className="mb-24 text-center ">
-            <h1 className="text-4xl font-bold mb-3 md:leading-[3.4rem] leading-[2.7rem] ">
+            <h1 className="text-4xl font-bold mb-3 md:leading-[3.4rem] leading-[2.7rem] font-[poppins] ">
               Breast Cancer Screening for Early Detection
             </h1>
-            <p className="pt-3 md:px-0  ">
+            <p className="pt-3 md:px-0 font-[poppins]  text-[16px]">
               Screening is the best way to protect you from breast cancer. It
               does not help prevent the cancer, but it can help find it early
               when treatment is easier and less invasive.
@@ -19,25 +19,25 @@ export default function Screening() {
             <div className=" ">
               <div className="flex justify-center items-center h-full flex-1 ">
                 <div>
-                  <h4 className="text-xl font-bold">Breast Self- Awareness</h4>
-                  <p className="text-base text-[#292929] mt-2 text-justify">
+                  <h4 className="text-xl font-bold font-[poppins]  text-[20px] text-[#292929] ">Breast Self- Awareness</h4>
+                  <p className="text-base text-[#292929] mt-2 text-justify font-[poppins]  text-[16px]">
                     It is important to check yourself regularly, so that you can
                     spot any change immediately. Remember to check all parts of
                     your breasts, armpits and up to your collarbone. Check once
                     a month, one week after your period, after age 20
                   </p>
 
-                  <h4 className="text-xl font-bold mt-4">
+                  <h4 className="text-xl font-bold mt-4 font-[poppins]  text-[20px] text-[#292929] ">
                     Clinical Breast Exam
                   </h4>
-                  <p className="mt-2 text-base text-[#292929]  text-justify">
+                  <p className="mt-2 text-base text-[#292929]  text-justify font-[poppins]  text-[16px]" >
                     It is an examination by a doctor or nurse who will check
                     both breasts and the lymph nodes in armpits. Recommended
                     every 3 years between 20 & 30 and every year after 40
                   </p>
 
-                  <h4 className="text-xl font-bold mt-4">Mammography</h4>
-                  <p className="mt-2 text-base text-[#292929]  text-justify">
+                  <h4 className="text-xl font-bold mt-4 font-[poppins]  text-[20px] text-[#292929] ">Mammography</h4>
+                  <p className="mt-2 text-base text-[#292929]  text-justify font-[poppins]  text-[16px]">
                     It is an x-ray of the breast which can find cancer when it
                     is too small to be felt. To be done after age 45 upon advice
                     of Doctor and based on personal risk factors. If an
@@ -48,7 +48,7 @@ export default function Screening() {
               </div>
             </div>
             <div className="flex justify-center flex-1">
-              <img src={about} alt="img" className="shadow-lg"></img>
+              <img src={screening} alt="screening"></img>
             </div>
           </div>
         </div>

@@ -6,11 +6,12 @@ export default function Diet() {
 <div className="py-mainPadding">
       <div className="container_part_two">
         <div className="grid md:grid-cols-2 grid-cols-1 gap-10 md:px-0  px-8">
-          <div>
-            <h1 className="text-4xl font-bold mb-3 md:leading-[3.4rem] leading-[2.7rem]  ">
+       <div className="flex items-center">
+       <div>
+            <h1 className="text-4xl font-bold mb-3 md:leading-[3.1rem] leading-[2.7rem] font-[poppins]  ">
               Eat Your Fruits & Vegetables – and Limit Alcohol (Zero is Best)
             </h1>
-            <p className="text-base">
+            <p className="font-[poppins] text-[16px] text-[#292929]">
               A healthy diet can help lower the risk of breast cancer. Try to
               eat a lot of fruits and veggies and limit alcohol. Even low levels
               of drinking can increase the risk of breast cancer. And with other
@@ -18,8 +19,9 @@ export default function Diet() {
               health.
             </p>
           </div>
+       </div>
           <div>
-            <img src={diet} alt=""  className="shadow-lg rounded-md" />
+            <img src={diet} alt=""   />
           </div>
         </div>
       </div>

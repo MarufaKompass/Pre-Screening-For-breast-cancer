@@ -8,8 +8,10 @@ export default function TypesOfCancer() {
     <div className="py-mainPadding">
       <div className="container">
         <div className="mb-24 text-center">
-          <h1 className="text-4xl font-bold ">Types Of Cancer</h1>
-          <p className="pt-3">
+          <h1 className="text-4xl font-bold font-[poppins] ">
+            Types Of Cancer
+          </h1>
+          <p className="pt-3 font-[poppins] text-[16px] text-[#292929]">
             provide you with some general guidelines that are commonly suggested
             to help reduce the risk of cancer.
           </p>
@@ -20,10 +22,10 @@ export default function TypesOfCancer() {
               <img src={breastCancer} alt="" />
             </div>
             <div className="p-3">
-              <h1 className="font-bold text-base pb-4">
+              <h1 className="font-bold font-[poppins] text-[18px] text-[#292929] pb-4">
                 Unveiling the Facts: Navigating Breast Cancer
               </h1>
-              <p className="text-justify  pb-16 text-base">
+              <p className="text-justify  pb-16 font-[poppins] text-[16px] text-[#292929]">
                 Remember that the information provided here is a general
                 overview, and if you or someone you know is concerned about
                 breast cancer, it's important to consult a healthcare
@@ -32,7 +34,9 @@ export default function TypesOfCancer() {
               </p>
               <div className="absolute bottom-4">
                 <button>
-                  <small className="text-primary">Learn more</small>
+                  <small className="text-primary font-[poppins] text-[18px]">
+                    Learn more
+                  </small>
                 </button>
               </div>
             </div>
@@ -42,10 +46,10 @@ export default function TypesOfCancer() {
               <img src={cervicalCancer} alt="" />
             </div>
             <div className="p-3">
-              <h1 className="font-bold text-base pb-4">
+              <h1 className="font-bold font-[poppins] text-[18px] text-[#292929] pb-4">
                 The Silent Threat: Unveiling the Realities of Cervical Cancer
               </h1>
-              <p className="text-justify pb-16 text-base">
+              <p className="text-justify pb-16 font-[poppins] text-[16px] text-[#292929]">
                 Cervical cancer is a type of cancer that starts in the cervix,
                 the narrow lower portion of the uterus (womb) that connects to
                 the vagina. It primarily affects women, and it is often caused
@@ -53,7 +57,9 @@ export default function TypesOfCancer() {
               </p>
               <div className="absolute bottom-4">
                 <button>
-                  <small className="text-primary">Learn more</small>
+                  <small className="text-primary font-[poppins] text-[18px]">
+                    Learn more
+                  </small>
                 </button>
               </div>
             </div>
@@ -63,10 +69,10 @@ export default function TypesOfCancer() {
               <img src={colonCancer} alt="" />
             </div>
             <div className="p-3">
-              <h1 className="font-bold text-base pb-4">
+              <h1 className="font-bold font-[poppins] text-[18px] text-[#292929] pb-4">
                 Colon Cancer Unveiled: Insights into Detection and Treatment
               </h1>
-              <p className="text-justify  pb-16 text-base">
+              <p className="text-justify  pb-16 font-[poppins] text-[16px] text-[#292929]">
                 Colon cancer, also known as colorectal cancer, is a type of
                 cancer that starts in the colon (large intestine) or the rectum
                 (the end of the colon). It usually begins as a growth called a
@@ -75,7 +81,9 @@ export default function TypesOfCancer() {
               </p>
               <div className="absolute bottom-4">
                 <button>
-                  <small className="text-primary">Learn more</small>
+                  <small className="text-primary font-[poppins] text-[18px]">
+                    Learn more
+                  </small>
                 </button>
               </div>
             </div>
@@ -85,10 +93,10 @@ export default function TypesOfCancer() {
               <img src={prostatePancer} alt="" />
             </div>
             <div className="p-3">
-              <h1 className="font-bold text-base pb-4">
+              <h1 className="font-bold font-[poppins] text-[16px] text-[#292929] pb-4">
                 Prostate Cancer Unveiled: Understanding the Basics
               </h1>
-              <p className="text-justify  pb-16 text-base">
+              <p className="text-justify  pb-16 font-[poppins] text-[18px] text-[#292929]">
                 Prostate cancer is a type of cancer that develops in the
                 prostate gland, a small walnut-sized gland that produces seminal
                 fluid in men. It's one of the most common types of cancer in
@@ -96,7 +104,9 @@ export default function TypesOfCancer() {
               </p>
               <div className="absolute bottom-4">
                 <button>
-                  <small className="text-primary">Learn more</small>
+                  <small className="text-primary font-[poppins] text-[18px]">
+                    Learn more
+                  </small>
                 </button>
               </div>
             </div>
