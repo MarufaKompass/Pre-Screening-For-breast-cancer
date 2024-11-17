@@ -10,15 +10,15 @@ export default function PhysicallyActive() {
             provide you with some general guidelines that are commonly suggested to help reduce the risk of cancer. 
             </p>
         </div>
-        <div className="grid grid-cols-2 gap-10">
+        <div className="grid md:grid-cols-2 grid-cols-1 gap-10 md:px-0  px-8">
           <div>
             <div>
-              <img src={active} alt=""  className="w-[600px] h-[500px]"/>
+              <img src={active} alt=""  className="shadow-lg rounded-md"/>
             </div>
           </div>
           <div>
-            <h1 className="text-4xl font-bold mb-3">Be Physically Active</h1>
-            <p className="text-xl">
+            <h1 className="lg:text-[2.2rem] text-[1.9rem] font-bold mb-3 leading-[2rem]">Be Physically Active</h1>
+            <p className="text-base">
               Exercise is as close to a silver bullet for good health as there
               is. Women who are exercise for at least 30 minutes a day have a
               lower risk of breast cancer. Regular exercise is also one of the
