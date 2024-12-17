@@ -100,6 +100,6 @@ const NavRoute = styled(Link)`
 
   &:hover {
     transition: 0.5s ease;
-    color: #12a9b2;
+    color: #BCA44E;
   }
 `;

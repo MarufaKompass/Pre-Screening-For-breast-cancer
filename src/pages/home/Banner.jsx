@@ -1,6 +1,12 @@
 import React from "react";
 import bannerImg from "../../images/breast-cancer.png";
+import { useNavigate } from "react-router-dom";
 export default function Banner() {
+    const navigate = useNavigate();
+
+    const handleFormPage = () => {
+      navigate("/questionnaire");
+    }
   return (
     <div className="bg-[#f7eef1]">
       <div className="py-mainPadding">
@@ -20,17 +26,12 @@ export default function Banner() {
                     cancer, including detection, diagnosis, treatment, and
                     prevention strategies
                   </p>
-                  <div className="mt-4 ">
-                    <a
-                      href="http://myhealthrow.com/freact/bcq"
-                      target="_blank"
-                      alt=""
-                      rel="noreferrer"
-                    >
+                  <div className="mt-4 " onClick={handleFormPage}>
+                   
                       <button className=" px-[26px] py-3 bg-[#BCA44E] text-[#fff] rounded-none font-medium text-[16px] flex justify-center items-center font-[poppins]">
                         Self Pre Screening
                       </button>
-                    </a>
+                  
                   </div>
                 </div>
               </div>

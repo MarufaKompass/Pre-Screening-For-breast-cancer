@@ -37,8 +37,8 @@ export const routes = [
     link: "/contact",
   },
   {
-    name: "Review",
-    link: "/review",
+    name: "Questionnaire",
+    link: "/questionnaire",
   },
   {
     name: "Terms & Policies",

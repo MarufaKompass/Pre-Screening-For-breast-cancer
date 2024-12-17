@@ -81,6 +81,6 @@ const NavRoute = styled(Link)`
  font-family: 'Poppins', sans-serif;
   &:hover {
     transition: 0.5s ease;
-    color: #12a9b2;
+    color: #BCA44E;
   }
 `;

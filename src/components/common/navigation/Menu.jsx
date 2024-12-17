@@ -52,7 +52,7 @@ const MenuButton = styled.div`
   color:#000;
   &:hover {
     transition: 0.5s ease;
-    color: #12a9b2;
+    color: #BCA44E;
 
   }
 `;
@@ -66,7 +66,7 @@ const SubRoute = styled(Link)`
   font-size: .9rem;
   &:hover {
     transition: 0.3s ease-in;
-    color:#12a9b2;
+    color:#BCA44E;
 
   }
 `;
