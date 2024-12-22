@@ -3,6 +3,8 @@ import { Route, Routes } from "react-router-dom";
 import Home from './pages/home';
 import MyAccount from './pages/myAccount/MyAccount';
 import Questionnaire from './pages/questionnaire/Questionnaire';
+import Login from './components/auth/Login';
+import Registration from './components/auth/Registration';
 
 
 export default function AppRoutes() {
@@ -13,7 +15,8 @@ export default function AppRoutes() {
       <Route path="/" element={<Home />} />
       <Route path="/myaccount" element={<MyAccount />} />
       <Route path="/questionnaire" element={<Questionnaire />} />
-
+      <Route path="/login" element={<Login />} />
+      <Route path="/registration" element={<Registration />} />
       {/* <Route path="appointment" element={<Appointment />} />
       <Route path="lobby" element={<Lobby />} />
       <Route path="payroll" element={<Payroll />} />

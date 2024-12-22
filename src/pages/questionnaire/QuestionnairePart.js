@@ -3,18 +3,28 @@ import { useForm } from "react-hook-form";
 import axios from "axios";
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
-
+import { yupResolver } from "@hookform/resolvers/yup";
+import { QuestionnaireValidation } from "../../components/Validation/YupValidation";
 export default function QuesnarisePart() {
   const {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm();
+  } = useForm({
+    resolver: yupResolver(QuestionnaireValidation),
+  });
   const navigate = useNavigate();
   const [country, setCountry] = useState([]);
+
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [ageList, setAgeList] = useState([]);
+
+  const [selectedCountry, setSelectedCountry] = useState([]);
+
+  const handleChange = (e) => {
+    setSelectedCountry(e.target.value);
+  };
 
   useEffect(() => {
     // Read Local JSON File
@@ -98,16 +108,21 @@ export default function QuesnarisePart() {
             </p>
             <div className="mt-3">
               <select
-                className="select select-bordered w-full  rounded-none"
+                className="select select-bordered w-full  rounded-none text-[16px] text-[#333] font-normal"
                 {...register("country")}
-                value="88"
+                value={selectedCountry}
+                onChange={handleChange}
               >
+                <option value="">Selected Country</option>
                 {country.map((c) => (
-                  <option key={c.id} sx={{ color: "#a7a7a7" }} value={c.pcode}>
+                  <option key={c.id} sx={{ color: "#333" }} value={c.name}>
                     {c.name}
                   </option>
                 ))}
               </select>
+              <p className="label-text-alt text-red-500 mt-3">
+                {errors.country?.message}
+              </p>
             </div>
           </div>
 
@@ -130,6 +145,7 @@ export default function QuesnarisePart() {
                   value="barishal"
                   {...register("city")}
                 />
+
                 <span className="font-[poppins] font-normal text-[14px] pl-2 ">
                   Barishal বরিশাল
                 </span>
@@ -229,6 +245,9 @@ export default function QuesnarisePart() {
                 </span>
               </p>
             </div>
+            <p className="label-text-alt text-red-500 mt-3">
+              {errors.city?.message}
+            </p>
           </div>
 
           <div className="  pb-1 mb-3 mt-3">
@@ -284,6 +303,9 @@ export default function QuesnarisePart() {
                 </span>
               </p>
             </div>
+            <p className="label-text-alt text-red-500 mt-3">
+              {errors.gender?.message}
+            </p>
           </div>
 
           <div>
@@ -297,7 +319,7 @@ export default function QuesnarisePart() {
             <div className="mt-3">
               <select
                 name="age"
-                className="select select-bordered w-full  rounded-none"
+                className="select select-bordered w-full  rounded-none text-[16px] text-[#333] font-normal"
                 {...register("age")}
               >
                 <option selected value="">
@@ -313,6 +335,9 @@ export default function QuesnarisePart() {
                   </option>
                 ))}
               </select>
+              <p className="label-text-alt text-red-500 mt-3">
+                {errors.age?.message}
+              </p>
             </div>
           </div>
 
@@ -335,6 +360,7 @@ export default function QuesnarisePart() {
                     className="w-4 h-4"
                     {...register("chkfreq")}
                   />
+
                   <span className="font-[poppins] font-normal text-[14px] pl-2 ">
                     Monthly ( প্রতি মাসে)
                   </span>
@@ -401,6 +427,9 @@ export default function QuesnarisePart() {
                 </label>
               </div>
             </div>
+            <p className="label-text-alt text-red-500 mt-3">
+              {errors.chkfreq?.message}
+            </p>
           </div>
 
           <div className="mt-3">
@@ -443,6 +472,9 @@ export default function QuesnarisePart() {
                 </label>
               </div>
             </div>
+            <p className="label-text-alt text-red-500 mt-3">
+              {errors.lumps?.message}
+            </p>
           </div>
 
           <div className="mt-3">
@@ -483,6 +515,9 @@ export default function QuesnarisePart() {
                 </label>
               </div>
             </div>
+            <p className="label-text-alt text-red-500 mt-3">
+              {errors.nipdis?.message}
+            </p>
           </div>
 
           <div className="mt-3">
@@ -524,6 +559,9 @@ export default function QuesnarisePart() {
                 </label>
               </div>
             </div>
+            <p className="label-text-alt text-red-500 mt-3">
+              {errors.dimp?.message}
+            </p>
           </div>
 
           <div className="mt-3">
@@ -565,6 +603,9 @@ export default function QuesnarisePart() {
                 </label>
               </div>
             </div>
+            <p className="label-text-alt text-red-500 mt-3">
+              {errors.bpain?.message}
+            </p>
           </div>
 
           <div className="mt-3">
@@ -606,6 +647,9 @@ export default function QuesnarisePart() {
                 </label>
               </div>
             </div>
+            <p className="label-text-alt text-red-500 mt-3">
+              {errors.nippain?.message}
+            </p>
           </div>
 
           <div className="mt-3">
@@ -647,6 +691,9 @@ export default function QuesnarisePart() {
                 </label>
               </div>
             </div>
+            <p className="label-text-alt text-red-500 mt-3">
+              {errors.nipret?.message}
+            </p>
           </div>
 
           <div className="mt-3">
@@ -688,6 +735,9 @@ export default function QuesnarisePart() {
                 </label>
               </div>
             </div>
+            <p className="label-text-alt text-red-500 mt-3">
+              {errors.bskin?.message}
+            </p>
           </div>
 
           <div className="mt-3">
@@ -729,6 +779,9 @@ export default function QuesnarisePart() {
                 </label>
               </div>
             </div>
+            <p className="label-text-alt text-red-500 mt-3">
+              {errors.btexture?.message}
+            </p>
           </div>
 
           <div className="mt-3">
@@ -769,6 +822,9 @@ export default function QuesnarisePart() {
                 </label>
               </div>
             </div>
+            <p className="label-text-alt text-red-500 mt-3">
+              {errors.lumpos?.message}
+            </p>
           </div>
 
           <div className="mt-3">
@@ -808,6 +864,9 @@ export default function QuesnarisePart() {
                 </label>
               </div>
             </div>
+            <p className="label-text-alt text-red-500 mt-3">
+              {errors.bswel?.message}
+            </p>
           </div>
 
           <div className="mt-3">
@@ -849,6 +908,10 @@ export default function QuesnarisePart() {
                 </label>
               </div>
             </div>
+
+            <p className="label-text-alt text-red-500 mt-3">
+              {errors.bcanpositive?.message}
+            </p>
           </div>
         </div>
         <div className="flex justify-end mb-10">

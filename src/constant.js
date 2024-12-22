@@ -64,4 +64,10 @@ export const routes = [
       },
     ],
   },
+  {
+    name: "Login",
+    link: "/login",
+    
+  },
+ 
 ];
