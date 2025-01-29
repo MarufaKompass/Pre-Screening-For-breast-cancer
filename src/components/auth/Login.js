@@ -1,12 +1,10 @@
 import React from "react";
 import backgroundImageUrl from "../../images/authBackground.png";
 import sideDesign from "../../images/sideDesign.png";
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
+
 export default function Login() {
-    const navigate = useNavigate();
-  // const handleRegister  = () => {
-  //   navigate('registration')
-  // } 
+
   return (
     <div
     className=" h-screen  bg-cover  bg-center  bg-no-repeat"
@@ -62,7 +60,7 @@ export default function Login() {
 
 
                   <div className="mt-6 text-center">
-                    <p className="font-[poppins] font-normal text-[14px] text-gray-600">Don't have an account ? <span   className="cursor-pointer pl-1 text-[#BCA44E] underline"><a href="./registration"> Registration here</a></span> </p>
+                    <p className="font-[poppins] font-normal text-[14px] text-gray-600">Don't have an account ? <span   className="cursor-pointer pl-1 text-[#BCA44E] underline"><Link to="/registration"> Registration here</Link></span> </p>
                   </div>
                 </div>
               </div>
