@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
-import  {Link}  from "react-router-dom";
+import { Link } from "react-router-dom";
 import axios from "axios";
 import backgroundImageUrl from "../../images/authBackground.png";
 import sideDesign from "../../images/sideDesign.png";
@@ -40,6 +40,36 @@ export default function Registration() {
 
     fetchCountry();
   }, []);
+
+  const onSubmit = (data) => {
+    console.log("data", data);
+
+    // setIsSubmitting(true);
+
+    axios
+      .post("https://api.myhealthrow.com/public/api/signup", data)
+      .then((res) => {
+        const data = res.data;
+        if (data.code === 200) {
+          sessionStorage.setItem(
+            "usersInfo",
+            JSON.stringify(res.data.data.token)
+          );
+          // navigate('/');
+        } else if (data.code === 208) {
+          // setErrorData(data);
+        } else if (data.code === 209) {
+          // setErrorData(data);
+        }
+      })
+      .catch((error) => {
+        console.error(error);
+      })
+      .finally(() => {
+        // setIsSubmitting(false);
+      });
+  };
+
   return (
     <div
       className=" h-screen  bg-cover bg-center  bg-no-repeat"
@@ -168,7 +198,9 @@ export default function Registration() {
                   </div>
 
                   <div className="w-full flex justify-center items-center border py-2 mt-6 bg-[#BCA44E] cursor-pointer">
-                    <button className="text-white font-bold">Register</button>
+                    <button className="text-white font-bold" type="submit">
+                      Register
+                    </button>
                   </div>
 
                   <div className="mt-6 text-center">
